@@ -3,10 +3,10 @@ import { MongooseModule } from '@nestjs/mongoose';
 
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
-import { ProductsModule } from './ps/products.module';
+import { psModule } from './ps/ps.module';
 
 @Module({
-  imports: [ProductsModule,MongooseModule.forRoot("mongodb+srv://JI-10:jitenmandwe@cluster-0.iharc.mongodb.net/?retryWrites=true&w=majority")],
+  imports: [psModule,MongooseModule.forRoot("mongodb+srv://JI-10:jitenmandwe@cluster-0.iharc.mongodb.net/?retryWrites=true&w=majority")],
   controllers: [AppController],
   providers: [AppService],
 })

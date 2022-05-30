@@ -2,7 +2,7 @@ import { json } from "express"
 import * as mongoose from "mongoose"
 
 export const psSchema= new mongoose.Schema({
-    id: {type:String,required:true},
+     id: {type:String,required:true},
     user_profile: {type:String,required:true},
     image: {type:String,required:false},
     location: {type:JSON,required:true},
